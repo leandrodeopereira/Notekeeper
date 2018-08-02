@@ -1,9 +1,10 @@
 package com.leandropereira.notekeeper
 
-class CourseInfo(val courseId: String, val title: String) {
+//As a data class kotlin implement methods like toString, equals and others
+data class CourseInfo(val courseId: String, val title: String) {
     override fun toString(): String {
         return title
     }
 }
 
-class NoteInfo(var course: CourseInfo, var title: String, var text: String )
+data class NoteInfo(var course: CourseInfo, var title: String, var text: String )
